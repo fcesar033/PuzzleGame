@@ -1,0 +1,115 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+  color: white;
+  font-size: 15px;
+}
+li::before {
+  content: "• ";
+  color: #ac0f16;
+}
+
+.col-40 h1 {
+  color: white;
+  background-color: #ac0f16;
+  width: 300px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.col-40 h2{
+  color:#2eafc6;
+  font-size: 20px;
+
+}
+
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #2a2726;
+  padding: 15px;
+  color: #000;
+  width: 340px;
+  
+}
+
+.col-60 {
+  background-color: #ac0f16;
+
+}
+
+#flecha{
+  font-size: 60px;
+  color:white;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+  
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+#juego{
+  width: 600px;
+  height: 600px;
+  background-color: #ac0f16;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+
+
+.piezas{
+  border: 1px solid black;
+
+}
+
+.img-pieza{
+  width: 100%;
+}
+
+.objetivo-final{
+  width: 100px;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  background-color: #2a2726;
+
+}
+
+.pie-footer{
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+}
+
